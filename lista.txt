@@ -1,1 +1,2 @@
 1 fazer um novo branch
+2 Alterar esse arquivo e fazer o merge
