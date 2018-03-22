@@ -1,0 +1,51 @@
+Objetivo
+
+fazer a leitura de coordenadas num  plano e com base nessas informações identificar aproximadamente uma localização que esteja o mais proximo possivel de onde há mais densidade de pontos
+
+Metodo
+
+nesse projeto foram  usados:
+
+estrutura de dados kd tree para dividir  as areas e encontrar os lugares de maior densidade de pontos
+
+listas encadeadas para guardar as cordenadas do plano
+
+algoritmo de ordenação mergesort 
+
+
+Algoritmo
+
+O algoritmo começa fazendo a leitura das cordenadas em um arquivo e guardando em uma lista encadeada. 
+
+Com isso, já possuindo um "mapa" da região, é possivel montar a kdtree.
+
+As cordenadas lidas são divididas por regiões seguindo a ideia de uma arvore 2d onde em cada nivel a divisão é feita a partir de um eixo cordenado, alternando a cada nivel.
+
+a função dividir faz isso de maneira recursiva.
+
+a medida que é sendo feita a divisão das regiões são criados os nós da arvore, que contem seus centroides, pontos, area e peso.
+
+a quantidade de niveis que a arvore possui nesse algoritmo é pré determinada, para a escolha de quantos niveis a arvore deve possuir deve se levar em consideração a quantidade inicial de pontos q o mapa possui 
+
+
+nesse algoritmo a quantidade de niveis da arvore são 5
+
+quando a arvore estiver completa e as regiões do mapa estiverem devidamente divididas, é possivel entao identificar as areas onde existe maior concentração de pontos e calcular então uma posição no mapa que fique mais perto das areas d maior densidade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
